@@ -45,7 +45,7 @@ Applying a single overtake
 
 ```clojure
 paramount.core> 
-;; water should always come before beer
+;; water should always come after beer
 (println 
  (apply-overtake
   (overtake :beer :water)
@@ -53,7 +53,7 @@ paramount.core>
 (:beer :water :wine :voda)
 nil
 paramount.core> 
-;; gold should always come before silver
+;; gold should always come after silver
 (println 
  (apply-overtake
   (overtake :silver :gold)
@@ -61,7 +61,7 @@ paramount.core>
 (:bronze :silver :gold)
 nil
 paramount.core>       
-;; food should aways come before candy
+;; food should aways come after candy
 (println
  (apply-overtake
   (overtake :candy :food)
